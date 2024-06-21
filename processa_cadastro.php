@@ -4,7 +4,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $db_name = "db_cadastro";
+    $db_name = "db_redecanais";
 
     $conn = new mysqli($servername,$username,$password,$db_name);
 
@@ -14,12 +14,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     // captura os dados do formulário e atribui os valores as suas respectivas variaveis 
     $nome = $_POST["nome"];
-    $email = $_POST["email"];
-    $telefone = $_POST["telefone"];
-    $descricao = $_POST["descricao"];
+    $estudio = $_POST["estudio"];
+    $categoria = $_POST["categoria"];
+    $sinopse = $_POST["sinopse"];
 
-    // sql para inserir os dados coletados na tabela clientes, ele vai inserir as variaveis, entao quando for fazer a alteração, vai alterar a variavel do respectivo ID
-    $sql = "INSERT INTO tb_cliente (nome, email, telefone, descricao) VALUES ('$nome', '$email', '$telefone', '$descricao')";
+    // sql para inserir os dados coletados na tabela filmes, ele vai inserir nas variaveis, entao quando for fazer a alteração, vai alterar a variavel do respectivo ID
+    $sql = "INSERT INTO tb_filmes (nome, estudio, categoria, sinopse) VALUES ('$nome', '$estudio', '$categoria', '$sinopse')";
 
     if($conn->query($sql) === TRUE) {
         echo "Cadastro realizado com sucesso!";

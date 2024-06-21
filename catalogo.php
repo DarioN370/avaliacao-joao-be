@@ -53,9 +53,9 @@
                 echo "<td>" . $row["categoria"] . "</td>";
                 echo "<td>" . $row["sinopse"] . "</td>";
                 echo "<td>";
-                echo "<a href='editar_cliente.php?id=" . $row["id"] . "'>Editar</a>";
+                echo "<a href='editar_filme.php?id=" . $row["id"] . "'>Editar</a>";
                 echo "|";
-                echo "<a href='excluir_cliente.php?id=" . $row["id"] . "'>Excluir</a>";
+                echo "<a href='excluir_filme.php?id=" . $row["id"] . "'>Excluir</a>";
                 echo "</td>";
                 echo "<tr>";
             }

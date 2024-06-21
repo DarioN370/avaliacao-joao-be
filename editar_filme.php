@@ -22,7 +22,7 @@
         if($result -> num_rows == 1){
             $row = $result -> fetch_assoc();
         } else {
-            echo "Cliente não encontrado";
+            echo "Filme não encontrado";
             exit;
         }
 
@@ -35,7 +35,6 @@
 
         //atualiza os dados do cliente no banco de dados
             $sql = "UPDATE tb_filmes SET nome = '$novo_nome', estudio = '$novo_estudio', categoria = '$novo_categoria', sinopse = '$novo_sinopse' WHERE id = $filme_id";
-
         }
     }
 

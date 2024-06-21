@@ -20,7 +20,7 @@
 
                 <div class="form-group">
                     <label for="estudio">Estúdio:</label>
-                    <input type="text" id="estudio" name="estuidio" required>
+                    <input type="text" id="estudio" name="estudio" required>
                 </div>
 
                 <div class="form-group">
