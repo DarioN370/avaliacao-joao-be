@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/img/favicon2.webp" type="image/x-icon">
     <title>Catálogo</title>
-    <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/catalogo.css">
 </head>
 <body>
-    <h1>Catálogo de filmes</h1>
+    <h1 class="tittle">Catálogo de filmes</h1>
 
     <?php
 
@@ -72,6 +71,6 @@
 
 
     ?>
-
+    <a href="index.php" class="btn-voltar" type="button">⬅️ Voltar</a>
 </body>
 </html>

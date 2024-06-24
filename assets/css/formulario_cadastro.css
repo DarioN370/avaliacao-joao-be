@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+
+    --cor-principal: #898989;
+    --cor-secundaria: #000;
+    --cor-terceira: #e7e7e7f6;
+    --cor-quarta: #000000cb;
+
+    --tamanho-principal: 1.5rem;
+    --tamanho-secundario: 2.5rem;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    color: var(--cor-terceira);
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: #000;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgb(0, 0, 0);
+}
+
+.container-form {
+    width: 100%;
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.txt-area{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    font-family: var(--fonte-secundaria);
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-enviar{
+    transition: 0.5s;
+}
+
+.btn-enviar:hover{
+    background: #a0a0a0;
+    color: #202020;
+}
+
+.btn-cadastrar{
+    transition: 0.8s;
+}
+
+.btn-cadastrar:hover{
+    background: #a0a0a0;
+    color: #202020;
+}
+
+a {
+    text-decoration: none;
+}
