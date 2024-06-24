@@ -13,7 +13,7 @@
 
     --cor-principal: #898989;
     --cor-secundaria: #000;
-    --cor-terceira: #fffffff6;
+    --cor-terceira: #e7e7e7;
     --cor-quarta: #000000cb;
 
     --tamanho-principal: 1.5rem;
@@ -25,7 +25,7 @@ body {
     /* animation: gradientAnimation 2s ease infinite;
     background: linear-gradient(90deg, #ffffff 10%, #cfcfcf 40%, #c0c0c0 70%);
     background-size: 400% 400%; */
-    background: #d82c2c;
+    background: #8b1c1c;
     height: 100vh;
 }
 

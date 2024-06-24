@@ -63,7 +63,7 @@
         } 
 
         else {
-            echo "Nenhu filme cadastrado.";
+            echo "Nenhum filme cadastrado.";
         }
 
         $conn->close();
