@@ -26,11 +26,11 @@
             die("Erro na conexão com o banco dados: " . $conn->connect_error);
         }
 
-        //Verificar se o filme foi excluido
+        // //Verificar se o filme foi excluido
 
-        if (isset($_GET["excluído"]) && $_GET["excluído"] == "true") {
-            echo "<p>Cliente excluído com sucesso</p>";
-        }
+        // if (isset($_GET["excluído"]) && $_GET["excluído"] == "true") {
+        //     echo "<p>Cliente excluído com sucesso</p>";
+        // }
 
 
         //Criar um comando SQL para selecionar todos os filmes

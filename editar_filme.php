@@ -22,6 +22,8 @@ if (isset($_GET["id"])) {
     $stmt->execute();
     $result = $stmt->get_result();
 
+
+    //verifica se algum filme foi encontrado para a edicao
     if ($result->num_rows == 1) {
         $row = $result->fetch_assoc();
     } else {
@@ -29,26 +31,28 @@ if (isset($_GET["id"])) {
         exit;
     }
 
-    // Processa o formulário para edição quando enviado
+    // Processa o formulário com os dados novos
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $novo_nome = $_POST["nome"];
         $novo_estudio = $_POST["estudio"];
         $novo_categoria = $_POST["categoria"];
         $novo_sinopse = $_POST["sinopse"];
 
-        // Atualiza os dados do cliente no banco de dados
+        // Atualiza os dados no banco
         $sql = "UPDATE tb_filmes SET nome = ?, estudio = ?, categoria = ?, sinopse = ? WHERE id = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("sssii", $novo_nome, $novo_estudio, $novo_categoria, $novo_sinopse, $filme_id);
 
+
+        //verifica se a atualizacao foi feita e bem sucedida
         if ($stmt->execute()) {
             echo "";
         } else {
             echo "Erro ao atualizar o filme: " . $stmt->error;
         }
     }
-    $conn->close();
-} else {
+    $conn->close(); // se foi bem sucedida ele fecha 
+} else { //avisa se nao tiver encontrado um id
     echo "ID do filme não fornecido";
     exit;
 }

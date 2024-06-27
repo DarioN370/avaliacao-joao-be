@@ -56,8 +56,8 @@ if (isset($_GET["id"])) {
     <div class="container">
         <h2>Excluir Filme</h2>
         <form class="container-form" action="excluir_filme.php?id=<?php echo $filme_id; ?>" method="POST">
-            <p>Tem certeza que deseja excluir este filme?</p>
-            <div class="btn-container">
+            <p class="aviso-delete">Tem certeza que deseja excluir este filme?</p>
+            <div class="btn-container-delete">
                 <div class="form-group">
                     <button class="btn-excluir" type="submit">Excluir</button>
                 </div>

@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="telefone">Categoria:</label>
+                    <label for="categoria">Categoria:</label>
                     <input class="txt-area" type="text" id="categoria" name="categoria" required>
                 </div>
                 
